@@ -1,0 +1,11 @@
+/*Added style to all elements to work in all browsers*/
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
