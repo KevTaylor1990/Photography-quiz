@@ -9,3 +9,86 @@ header {
     text-align: center;
     top: 0;
 }
+
+header h1 {
+    font-size: 4rem;
+}
+/*Adding styling to the body elements*/
+:root {
+    --blue: blue;
+    --green: lightgreen;
+    --red: red;
+}
+
+body {
+    background-color: var(--blue);
+    padding: 0;
+    margin: 0;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+body.correct {
+    background-color: var(--green);
+}
+
+body.wrong {
+    background-color: var(--red);
+}
+/*Adding style to the question and buttons container*/
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*Adding styling to the buttons*/
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    background-color: var(--green);
+    color: black;
+}
+
+.btn.wrong {
+    background-color: var(--red);
+    color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
